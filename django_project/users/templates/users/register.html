@@ -1,0 +1,11 @@
+<h3>Register</h3>
+
+<form method="POST" actions="">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">Submit</button>
+</form>
+
+{% for message in messages %}
+<p>{{message}}</p>
+{% endfor %}
